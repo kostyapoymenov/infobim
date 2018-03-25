@@ -1,6 +1,191 @@
 extends ../loyout
 
 block variables
-    - var title= "infobim"
+    - var title= "infoBIM"
 
 block content
+    header.container.header
+        .header__logo
+            img.header__img(src="images/content/logo.png" alt="infoBIM")
+        nav.nav
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href="#") Курсы
+                li.nav__item
+                    a.nav__link(href="#") Услуги
+                li.nav__item
+                    a.nav__link(href="#") Портфолио
+                li.nav__item
+                    a.nav__link(href="#") Отзывы
+                li.nav__item
+                    a.nav__link(href="#") Контакты
+        .header-tel
+            a.header-tel__link(href="tel:79818045977") +7 (981) 804-59-77
+    section.hero.sect-underline
+        .container
+            .hero-block
+                .hero-block__name infoBIM
+                h1.hero-block__offer Школа информационного моделирования и компьютерной графики
+                button.btn Связаться
+    section.sect-underline
+        .container.advantage
+            h2.main-title Наши преимущества
+            .advant-block
+                .advant-block__item
+                    .advant-block__img
+                        svg.advant-block__svg(width='100%' height='100%')
+                            use(xlink:href=`images/icons/sprite.svg#calendar`)
+                    .advant-block__text
+                        p Индивидуальный график занятий для каждого
+                .advant-block__item
+                    .advant-block__img
+                        svg.advant-block__svg(width='100%' height='100%')
+                            use(xlink:href=`images/icons/sprite.svg#earth`)
+                    .advant-block__text
+                        p Возможность обучения из любой точки мира
+                .advant-block__item
+                    .advant-block__img
+                        svg.advant-block__svg(width='100%' height='100%')
+                            use(xlink:href=`images/icons/sprite.svg#folder`)
+                    .advant-block__text
+                        p Записи уроков останутся у вас после обучения
+                .advant-block__item
+                    .advant-block__img
+                        svg.advant-block__svg(width='100%' height='100%')
+                            use(xlink:href=`images/icons/sprite.svg#home`)
+                    .advant-block__text
+                        p Реальный опыт использования программ в строительстве
+    section.course
+        h2.main-title Наши курсы
+        .course-block.course-block--one
+            .container
+                h3.main-subtitle Для архитекторов и дизайнеров
+                .course-content
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/autoCad.png" alt="autoCad")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name AutoCAD
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 12 000 руб.
+                            button.btn Заказать
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/revitArchitecture.png" alt="Revit Architecture")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name Revit Architecture
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 16 000 руб.
+                            button.btn Заказать
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/3dMax.png" alt="3D Max")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name 3D Vax
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 17 000 руб.
+                            button.btn Заказать
+        .course-block.course-block--two
+            .container
+                h3.main-subtitle Для инженеров-проектировщиков
+                .course-content
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/autoCad.png" alt="AutoCAD")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name AutoCAD
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 12 000 руб.
+                            button.btn Заказать
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/revitStructure.png" alt="Revit Structure")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name Revit Structure
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 16 000 руб.
+                            button.btn Заказать
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/scadOffice.png" alt="SCAD Office")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name SCAD office
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 15 000 руб.
+                            button.btn Заказать
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/autodeskRobot.png" alt="Autodesk Robot")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name Autodesk Robot
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 15 000 руб.
+                            button.btn Заказать
+        .course-block.course-block--three
+            .container
+                h3.main-subtitle Для инженеров коммуникаций
+                .course-content
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/autoCad.png" alt="AutoCAD")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name AutoCAD
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 12 000 руб.
+                            button.btn Заказать
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/revitMEP.png" alt="Revit MEP")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name Revit MEP
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 20 000 руб.
+                            button.btn Заказать
+                    .course-item
+                        .course-item__head
+                            img.course-item__img(src="images/content/mep+.png" alt="MEP")
+                        .course-item__bottom
+                            .course-item__block
+                                .course-item__name MEP + стажировка
+                                button.course-item__btn(type="button") Подробнее >>
+                            .course-item__price 30 000 руб.
+                            button.btn Заказать
+
+    section.services
+        .container
+            h2.main-title Наши курсы
+            .services-content
+                .service-block.service-block--left
+                    .service-block__overlay
+                        .service-block__info
+                            .service-block__title BIM модель
+                            ul.service-block__list
+                                li.service-block__item моделирование любой сложности
+                                li.service-block__item оформление чертежей
+                                li.service-block__item корректировка Вашей модели
+                            .service-block__price Цена:
+                                span.service-block__value  договорная
+                        button.btn Заказать
+                .service-block.service-block--right
+                    .service-block__overlay
+                        .service-block__info
+                            .service-block__title Визуализация
+                            ul.service-block__list
+                                li.service-block__item интерьер
+                                li.service-block__item экстерьер
+                            .service-block__price Цена:
+                                span.service-block__value  300 р/кв.м
+                        button.btn Заказать
+    section.advice
+        .container.advice-block
+            .main-subtitle.main-subtitle--white Не можете определиться, какой выбрать курс?
+            button.btn.advice-block__btn Бесплатная консультация

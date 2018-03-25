@@ -95,7 +95,7 @@ function svg(done)  {
             cheerio({
                 run($) {
                     $("[fill], [stroke], [style], [width], [height]")
-                        .removeAttr("fill")
+                        // .removeAttr("fill")
                         .removeAttr("stroke")
                         .removeAttr("style")
                         .removeAttr("width")

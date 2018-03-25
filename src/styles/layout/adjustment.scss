@@ -1,48 +1,60 @@
-.wrapper {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: relative;
+//.wrapper {
+//  overflow: hidden;
+//  width: 100%;
+//  height: 100%;
+//  position: relative;
+//}
+
+.container {
+  width: 95%;
+  max-width: rem(940px);
+  //min-height: rem(650px);
+  margin: 0 auto;
 }
 
 section {
   width: 100%;
-  min-height: 628px;
+  //min-height: 628px;
   position: relative;
-  .hero__scroll-button {
-    position: absolute;
-    bottom: 5%;
-    @include phones {
-      bottom: 15%;
-    }
-  }
-  &.section--small {
-    min-height: rem(500px);
-    height: 50%;
-  }
-  &.section--big {
-    height: 100vh;
-    @include tablets {
-      height: 90vh;
-    }
-    .hero__user {
-      top: 40%;
-    }
-    .hero__scroll-button {
-      bottom: 15%;
-    }
-  }
 }
 
 .btn {
   background-color: $blue;
   color: #ffffff;
-  font-family: Roboto;
+  padding:rem(10px) rem(30px);
+  font-family: 'CenturyGothic';
   font-weight: 300;
   @include font-size(16px);
   transition: background-color 0.4s;
+  border-radius: 5px;
   &:hover {
     background-color: $darkBlue;
     transition: background-color 0.4s;
   }
+}
+
+.sect-underline {
+  border-bottom: 3px solid #c5e8f9;
+}
+
+.main-title {
+  font-family: 'CenturyGothic';
+  font-weight: 700;
+  @include font-size(35px);
+  color: #092233;
+  margin: rem(30px) 0 rem(20px);
+  text-align: center;
+}
+
+.main-subtitle {
+  font-family: 'CenturyGothic';
+  font-weight: 600;
+  @include font-size(22px);
+  color: $darkBlue;
+  text-align: center;
+  margin-bottom: rem(20px);
+}
+
+.main-subtitle--white {
+  color: #ffffff;
 }
