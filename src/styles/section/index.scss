@@ -182,6 +182,12 @@
   color: $blue;
   line-height: 1.6;
   margin-bottom: rem(10px);
+  transition: all .3s;
+  &:hover {
+    transition: all .3s;
+    color: $darkBlue;
+
+  }
 }
 
 .course-item__price {
