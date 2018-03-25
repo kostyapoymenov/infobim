@@ -189,3 +189,53 @@ block content
         .container.advice-block
             .main-subtitle.main-subtitle--white Не можете определиться, какой выбрать курс?
             button.btn.advice-block__btn Бесплатная консультация
+    section.contact
+        .container
+            h2.main-title Связаться
+            form.form
+                .form__left
+                    .form__block
+                        input.form__input(type="text" name="form-name" value="Имя")
+                    .form__block
+                        input.form__input(type="text" name="form-email" value="E-mail")
+                    .form__block
+                        input.form__input(type="text" name="form-tel" value="Телефон")
+                .form__right
+                    .form__block
+                        textarea.form__input(name="form-text" id="" cols="30" rows="6") Ваше сообщение
+                    .form__block
+                        input.form__chekbox#userAgreement(type="checkbox" name="form-name" value="Ваше имя" checked)
+                        label.form__label(for="userAgreement") Я даю согласие на обработку моих персональных данных
+                    button.btn Отправить
+    footer.footer
+        .container.footer__block
+            .footer__left
+                .footer__row
+                    .partner
+                        .partner__title Партнер
+                        ul.partner__list
+                            li.partner__item
+                                a.partner__link(href="#") ООО "ИК "Санлайн"
+                .footer__row
+                    .social
+                        -
+                            var socials = [
+                                ['vk','vk.com/infobim'],
+                                ['youtube','https://m.youtube.com/channel/UCpd9dFwXuDYKJTs_iEGQvPg']
+                            ]
+                        ul.social__list
+                            each social in socials
+                                li.social__item
+                                    a(class=`social__link social__link_${social[0]}` href=`${social[1]}`)
+                                        svg.social__link_svg(width='100%' height='100%')
+                                            use(xlink:href=`images/icons/sprite.svg#${social[0]}`)
+            .footer__right
+                ul.contact__list
+                    li.contact__item
+                        a.contact__link(href="mailto:mr.shruslan@gmail.com") mr.shruslan@gmail.com
+                    li.contact__item
+                        a.contact__link(href="tel: +79818045977") +7 (981) 804-59-77
+                button.btn.contact__btn Связаться
+
+
+

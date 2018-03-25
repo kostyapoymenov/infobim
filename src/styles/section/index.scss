@@ -299,5 +299,152 @@
   margin: 0 auto;
 }
 
+.contact {
+  background-color: #f1f4f7;
+}
 
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: rem(10px) rem(10px) rem(30px);
+}
 
+.form__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 rem(15px);
+  width: 45%;
+}
+
+.form__right {
+  margin: 0 rem(15px);
+  width: 45%;
+}
+
+.form__block {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.form__input {
+  font-family: 'CenturyGothic';
+  @include font-size(16px);
+  font-weight: 400;
+  width: 100%;
+  padding: rem(15px);
+  background-color: #ffffff;
+  color: #ababac;
+  border: 1px solid #ababac;
+  outline: none;
+  border-radius: rem(5px);
+  &:focus {
+    border: 1px solid $blue;
+  }
+}
+
+.form__chekbox {
+  outline: none;
+  height: rem(14px);
+  width: rem(14px);
+}
+
+.form__label {
+  font-family: 'CenturyGothic';
+  @include font-size(12px);
+  font-weight: 400;
+  padding-left: rem(5px);
+}
+
+.footer {
+  background-color: #007a97;
+}
+
+.footer__block {
+  display: flex;
+  padding: rem(30px) 0;
+}
+
+.footer__left {
+  width: 50%;
+}
+
+.footer__right {
+  width: 50%;
+  text-align: right;
+}
+
+.footer__row {
+  margin-bottom: rem(10px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.partner__title {
+  font-family: 'CenturyGothic';
+  @include font-size(16px);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: rem(5px);
+}
+
+.partner__link {
+  font-family: 'CenturyGothic';
+  @include font-size(16px);
+  font-weight: 400;
+  color: #ffffff;
+  transition: all .3s;
+  &:hover {
+    color: $blue;
+    transition: all .3s;
+  }
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  padding: rem(5px);
+}
+
+.social__link {
+  max-width: rem(42px);
+  max-height: rem(42px);
+}
+
+.social__link_svg {
+  max-width: rem(42px);
+  max-height: rem(42px);
+  fill: #ffffff;
+  transition: all .3s;
+  &:hover {
+    fill: $blue;
+    transition: all .3s;
+  }
+}
+
+.contact__list {
+  margin-bottom: rem(10px);
+}
+
+.contact__link {
+  font-family: 'CenturyGothic';
+  @include font-size(16px);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.5;
+  transition: all .3s;
+  &:hover {
+    color: $blue;
+    transition: all .3s;
+  }
+}
+
+.contact__btn {
+  float: right;
+}
