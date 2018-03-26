@@ -118,13 +118,6 @@ prettySvgs()
         })
     )
     .pipe(gulp.dest(`build/images/icons`));
-
-// prettySvgs().pipe(
-//     $gp.sassInlineSvg({
-//         destDir: `${SRC_DIR}/styles/icons/`
-//     })
-// );
-
 done();
 }
 
@@ -138,6 +131,11 @@ function fonts() {
 function script() {
     return gulp.src('./src/js/main.js')
         .pipe(gulpWebpack(webpackConfig, webpack))
+        .pipe(gulp.dest(path.scripts.dest));
+}
+// webpack
+function scriptLib() {
+    return gulp.src('./src/js/libs/*')
         .pipe(gulp.dest(path.scripts.dest));
 }
 
@@ -170,6 +168,6 @@ exports.clean = clean;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(style, template, fonts, image, script, svg),
+    gulp.parallel(style, template, fonts, image, script, svg, scriptLib),
     gulp.parallel(watch, server)
 ));
