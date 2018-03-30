@@ -689,7 +689,7 @@
   display: none;
 }
 
-@include tablets {
+@include phones {
   .hamburger__link {
     display: flex;
   }
@@ -724,6 +724,7 @@
   }
 
   .hamburger {
+    display: block;
     position: absolute;
     top:rem(40px);
     right:rem(30px);
