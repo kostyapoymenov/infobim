@@ -681,6 +681,14 @@
   float: right;
 }
 
+.hamburger {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
 @include tablets {
   .hamburger__link {
     display: flex;
