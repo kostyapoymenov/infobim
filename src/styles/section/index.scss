@@ -7,6 +7,9 @@
 .header__logo {
   height: rem(100px);
   padding: 0 rem(10px);
+  @include phones-xs {
+    height: rem(80px);
+  }
 }
 
 .header__img {
@@ -57,6 +60,12 @@
   @include phones {
     padding: 0 rem(25px);
   }
+
+  @include phones-xs {
+    padding: 0 rem(10px);
+  }
+
+
 }
 .header-tel__link {
   font-family: 'CenturyGothic';
@@ -295,6 +304,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  @include phones-xs {
+    display: block;
+    .btn {
+      margin:0 auto;
+    }
+  }
 }
 
 .service-block__info {
@@ -336,6 +352,9 @@
     width: rem(8px);
     background-color: $darkBlue;
     border-radius: 50%;
+    @include phones {
+      top:calc(50% - 2px);
+    }
   }
 }
 
@@ -795,5 +814,12 @@
     @include font-size(20px);
     text-transform: uppercase;
     padding: rem(10px);
+  }
+}
+
+@include phones-xs {
+  .hamburger {
+    right:rem(15px);
+    top:rem(35px);
   }
 }
