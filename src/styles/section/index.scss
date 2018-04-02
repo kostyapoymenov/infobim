@@ -383,16 +383,110 @@
   margin: 0 auto;
 }
 
-.comment {}
+.work {
+  position: relative;
+  margin-bottom: rem(20px);
+}
+
+.work__slide {
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2% 7%;
+  z-index: 10;
+}
+
+.work__left {
+  width:50%;
+  position: relative;
+  @include phones {
+    width: 90%;
+  }
+}
+
+.work__right {
+  width:50%;
+  position: relative;
+  background-color: #007a97;
+  padding:3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include phones {
+    width: 90%;
+  }
+}
+
+.work__img {
+  width:100%;
+  height: 100%;
+}
+
+.work__title {
+  font-family: 'CenturyGothic';
+  font-weight: 400;
+  @include font-size(20px);
+  color: #ffffff;
+  margin-bottom: rem(10px);
+}
+
+.work__text {
+  font-family: 'CenturyGothic';
+  font-weight: 300;
+  @include font-size(14px);
+  color: #ffffff;
+  margin-bottom: rem(10px);
+}
+
+.work__list {
+  display: flex;
+}
+
+.work__item {
+  margin: rem(5px);
+  flex:1;
+  max-width: rem(80px);
+  max-height: rem(80px);
+  position: relative;
+  border:1px solid #ffffff;
+  z-index: 10;
+  transition: all .3s;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    border:1px solid $darkBlue;
+  }
+}
+
+.work__link {
+  cursor: pointer;
+  height:100%;
+}
+
+.work__icon {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 
 .owl-item {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .owl-stage-outer {
   overflow: hidden;
   position: relative;
+  z-index: 10;
 }
 
 .owl-stage {
@@ -404,7 +498,6 @@
   width: 100%;
   height:100%;
   top:0;
-  z-index: 1;
 }
 
 .owl-prev {
@@ -535,8 +628,6 @@
     width: 80%;
   }
 }
-
-
 
 .contact {
   background-color: #f1f4f7;
