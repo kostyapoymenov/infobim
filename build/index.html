@@ -93,7 +93,7 @@
                 </div>
                 <div class="course-item__price">12 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
             <div class="course-item">
               <div class="course-item__head"><img class="course-item__img" src="images/content/revitArchitecture.png" alt="Revit Architecture"></div>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="course-item__price">16 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
             <div class="course-item">
               <div class="course-item__head"><img class="course-item__img" src="images/content/3dMax.png" alt="3D Max"></div>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="course-item__price">17 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="course-item__price">12 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
             <div class="course-item">
               <div class="course-item__head"><img class="course-item__img" src="images/content/revitStructure.png" alt="Revit Structure"></div>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="course-item__price">16 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
             <div class="course-item">
               <div class="course-item__head"><img class="course-item__img" src="images/content/scadOffice.png" alt="SCAD Office"></div>
@@ -155,7 +155,7 @@
                 </div>
                 <div class="course-item__price">15 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
             <div class="course-item">
               <div class="course-item__head"><img class="course-item__img" src="images/content/autodeskRobot.png" alt="Autodesk Robot"></div>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="course-item__price">15 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="course-item__price">12 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
             <div class="course-item">
               <div class="course-item__head"><img class="course-item__img" src="images/content/revitMEP.png" alt="Revit MEP"></div>
@@ -195,7 +195,7 @@
                 </div>
                 <div class="course-item__price">20 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
             <div class="course-item">
               <div class="course-item__head"><img class="course-item__img" src="images/content/mep+.png" alt="MEP"></div>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="course-item__price">30 000 руб.</div>
               </div>
-              <button class="btn">Заказать</button>
+              <button class="btn btn__order">Заказать</button>
             </div>
           </div>
         </div>
@@ -389,6 +389,33 @@
         </ul>
       </nav>
     </div>
+    <script type="template" id="overlayTemplate">
+      <div class="modal">
+        <div class="modal__programm">
+          <div class="modal__header">
+            <h2 class="modal__title">Учебнай план изучения программы Autodesk Revit (Architecture) 10 занятий</h2>
+          </div>
+          <div class="modal__body">
+            <ol class="modal-prog__list">
+              <li class="modal-prog__item">Интерфейс (основные функции и инструменты для работы с программой) , создание шаблона проекта. Виды шаблона. Организация рабочего пространства и навигация. Оси и уровни.<span class="modal-prog__num">1</span></li>
+              <li class="modal-prog__item">Стены (создание, редактирование, параметры, создание «пирога» и работа с материалами) и колонны, двери, окна. Типоразмеры и свойства.<span class="modal-prog__num">2</span></li>
+              <li class="modal-prog__item">Перекрытия, крыши (создание, редактирование, создание «пирога» и работа с материалами)<span class="modal-prog__num">3</span></li>
+              <li class="modal-prog__item">Лестницы, пандусы и ограждения (создание, редактирование, параметры и свойства). Формообразующие. Работа с 3D видом. Видимость и графика 3D вида.<span class="modal-prog__num">4</span></li>
+              <li class="modal-prog__item">Семейства (работа с семействами, создание, загрузка и редактирование). Расстановка мебели, оборудования. Создание своего семейства.<span class="modal-prog__num">5</span></li>
+              <li class="modal-prog__item">Зонирование, аннотации, обозначения на планах помещений, легенды, линии детализации и линии модели, выноски. Обмерный план. Привязки размеров и редактирование. Работа с видами (подрезка, свойства, копирование). Использование подложек. Экспорт и импорт из AutoCAD.<span class="modal-prog__num">6</span></li>
+              <li class="modal-prog__item">Создание собственного проекта, отработка предыдущих занятий; совместная работа над проектом.<span class="modal-prog__num">7-8</span></li>
+              <li class="modal-prog__item">Оформление чертежей, разрезы, создание спецификаций, размещение видов на листе. Создание штампа. Организация диспетчера проекта.<span class="modal-prog__num">9</span></li>
+              <li class="modal-prog__item">Визуализация, обход, экспорт проекта. Экспорт в 3DMax. Настройка видимости графики.<span class="modal-prog__num">10</span></li>
+            </ol>
+          </div>
+          <div class="modal__footer">
+            <div class="modal__price"><span class="modal__num">16 000 руб</span></div>
+          </div>
+          <button class="modal__close"></button>
+        </div>
+        <!--.modal__overlay-->
+      </div>
+    </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

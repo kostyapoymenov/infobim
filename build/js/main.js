@@ -1,1 +1,64 @@
-!function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:o})},n.r=function(e){Object.defineProperty(e,"__esModule",{value:!0})},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t){$(document).ready(function(){$(".owl-carousel").owlCarousel({items:1,loop:!0})}),function(){const e=document.querySelector(".hamburger"),t=document.querySelector(".hamburger-menu");e.addEventListener("click",function(){this.classList.toggle("hamburger--active"),t.classList.toggle("hamburger-menu--active"),t.classList.contains("hamburger-menu--active")?document.body.style.overflow="hidden":document.body.style.overflow=""})}()}]);
+function Sliders() {
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop:true
+        });
+    });
+}
+Sliders();
+
+function burger(){
+    const   hamburgerBtn = document.querySelector('.hamburger'),
+            hamburgerMenu = document.querySelector('.hamburger-menu');
+
+    hamburgerBtn.addEventListener('click', function(){
+        this.classList.toggle('hamburger--active');
+        hamburgerMenu.classList.toggle('hamburger-menu--active');
+
+        if(hamburgerMenu.classList.contains('hamburger-menu--active')){
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+        } else {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+        }
+    });
+}
+burger();
+
+function modal(){
+
+    const orderBtn = document.querySelectorAll('.btn__order');
+
+    function openOverlay(){
+        const overlayElement = document.createElement('div');
+        overlayElement.classList.add('modal__overlay');
+
+        const template = document.querySelector('#overlayTemplate');
+        overlayElement.innerHTML = template.innerHTML;
+
+        const closeElement = overlayElement.querySelector('.modal__close');
+
+        closeElement.addEventListener('click', function() {
+            document.body.removeChild(overlayElement);
+            document.body.style.overflow = '';
+            // document.body.style.position = '';
+        });
+
+        return overlayElement;
+    }
+
+    const overlay = openOverlay();
+
+    for(var i = 0; i < orderBtn.length; i++ ){
+        orderBtn[i].addEventListener('click',function() {
+            document.body.appendChild(overlay);
+            document.body.style.overflow = 'hidden';
+            // document.body.style.position = 'fixed';
+        });
+    }
+
+
+}
+modal();

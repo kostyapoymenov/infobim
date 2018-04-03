@@ -127,13 +127,13 @@ function fonts() {
         .pipe(gulp.dest('build/fonts'))
 }
 
-// webpack
+// js
 function script() {
     return gulp.src('./src/js/main.js')
-        .pipe(gulpWebpack(webpackConfig, webpack))
+        // .pipe(gulpWebpack(webpackConfig, webpack))
         .pipe(gulp.dest(path.scripts.dest));
 }
-// webpack
+// libs js
 function scriptLib() {
     return gulp.src('./src/js/libs/*')
         .pipe(gulp.dest(path.scripts.dest));
