@@ -1,0 +1,25 @@
+script(type="template" id="modalFormTemplate")
+    .modal
+        .modal__form
+            .modal-form__block
+                h2.modal__title Получить бесплатную консультацию
+                form.form
+                    .form__left
+                        .form__block.form__block-error
+                            input.form__input(type="text" name="form-name" placeholder="Имя")
+                            span.form__error Введите правильное имя
+                        .form__block
+                            input.form__input(type="text" name="form-email" placeholder="E-mail")
+                            span.form__error Введите правильный e-mail
+                        .form__block
+                            input.form__input(type="text" name="form-tel" placeholder="Телефон")
+                            span.form__error Введите правильный телефон
+                    .form__right
+                        .form__block
+                            textarea.form__input(name="form-text" id="" cols="30" rows="6" placeholder="Ваше сообщение")
+                        .form__block
+                            input.form__chekbox#userAgreement(type="checkbox" name="form-name" value="Ваше имя" checked)
+                            label.form__label(for="userAgreement") Я даю согласие на обработку моих персональных данных
+                        button.btn Отправить
+            button.modal__close
+            h2.modal__title.modal__title-acess Ваша заявка успешно отправлена

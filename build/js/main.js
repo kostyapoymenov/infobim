@@ -27,15 +27,16 @@ function burger(){
 }
 burger();
 
-function modal(){
 
-    const orderBtn = document.querySelectorAll('.btn__order');
+function modal(content, btn){
 
-    function openOverlay(){
+    const orderBtn = document.querySelectorAll(btn);
+
+    function openOverlay(content){
         const overlayElement = document.createElement('div');
         overlayElement.classList.add('modal__overlay');
 
-        const template = document.querySelector('#overlayTemplate');
+        const template = document.querySelector(content);
         overlayElement.innerHTML = template.innerHTML;
 
         const closeElement = overlayElement.querySelector('.modal__close');
@@ -49,7 +50,7 @@ function modal(){
         return overlayElement;
     }
 
-    const overlay = openOverlay();
+    const overlay = openOverlay(content);
 
     for(var i = 0; i < orderBtn.length; i++ ){
         orderBtn[i].addEventListener('click',function() {
@@ -58,7 +59,7 @@ function modal(){
             // document.body.style.position = 'fixed';
         });
     }
-
-
 }
-modal();
+modal('#modalProgrammTemplate', '.course-item__btn');
+modal('#modalFormTemplate', '.btn__consultation');
+modal('#modalOrderTemplate', '.btn__order');

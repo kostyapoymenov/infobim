@@ -26,7 +26,7 @@ block content
             .hero-block
                 .hero-block__name infoBIM
                 h1.hero-block__offer Школа информационного моделирования и компьютерной графики
-                button.btn Связаться
+                button.btn.btn__order Связаться
     section.sect-underline
         .container.advantage
             h2.main-title Наши преимущества
@@ -173,7 +173,7 @@ block content
                                 li.service-block__item корректировка Вашей модели
                             .service-block__price Цена:
                                 span.service-block__value  договорная
-                        button.btn Заказать
+                        button.btn.btn__order Заказать
                 .service-block.service-block--right
                     .service-block__overlay
                         .service-block__info
@@ -183,11 +183,11 @@ block content
                                 li.service-block__item экстерьер
                             .service-block__price Цена:
                                 span.service-block__value  300 р/кв.м
-                        button.btn Заказать
+                        button.btn.btn__order Заказать
     section.advice
         .container.advice-block
             .main-subtitle.main-subtitle--white Не можете определиться, какой выбрать курс?
-            button.btn.advice-block__btn Бесплатная консультация
+            button.btn.btn__consultation Бесплатная консультация
     section.portfolio.sect-underline
         .container
             h2.main-title Портфолио
@@ -249,15 +249,18 @@ block content
             h2.main-title Связаться
             form.form
                 .form__left
+                    .form__block.form__block-error
+                        input.form__input(type="text" name="form-name" placeholder="Имя")
+                        span.form__error Введите правильное имя
+                    .form__block.form__block-error
+                        input.form__input(type="text" name="form-email" placeholder="E-mail")
+                        span.form__error Введите правильный e-mail
                     .form__block
-                        input.form__input(type="text" name="form-name" value="Имя")
-                    .form__block
-                        input.form__input(type="text" name="form-email" value="E-mail")
-                    .form__block
-                        input.form__input(type="text" name="form-tel" value="Телефон")
+                        input.form__input(type="text" name="form-tel" placeholder="Телефон")
+                        span.form__error Введите правильный телефон
                 .form__right
                     .form__block
-                        textarea.form__input(name="form-text" id="" cols="30" rows="6") Ваше сообщение
+                        textarea.form__input(name="form-text" id="" cols="30" rows="6" placeholder="Ваше сообщение")
                     .form__block
                         input.form__chekbox#userAgreement(type="checkbox" name="form-name" value="Ваше имя" checked)
                         label.form__label(for="userAgreement") Я даю согласие на обработку моих персональных данных
@@ -290,7 +293,7 @@ block content
                         a.contact__link(href="mailto:mr.shruslan@gmail.com") mr.shruslan@gmail.com
                     li.contact__item
                         a.contact__link(href="tel: +79818045977") +7 (981) 804-59-77
-                button.btn.contact__btn Связаться
+                button.btn.btn__consultation Связаться
 
 
 
