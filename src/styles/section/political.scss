@@ -1,0 +1,13 @@
+.political {
+  height:100%;
+}
+
+.political__text {
+  font-family: 'CenturyGothic';
+  font-weight: 500;
+  @include font-size(16px);
+  color: $darkBlue;
+  p {
+    margin-bottom: rem(10px);
+  }
+}

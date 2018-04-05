@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>infoBIM</title>
+    <link rel="shortcut icon" href="images/content/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <section class="political">
+      <div class="container">
+        <div class="main__logo"><img></div>
+        <h1 class="main-title">Политика конфидециальности</h1>
+        <div class="political__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+        </div>
+      </div>
+    </section>
+    <div class="hamburger"><a class="hamburger__link"><span class="hamburger__link_item"></span></a></div>
+    <div class="hamburger-menu">
+      <nav class="hamburger-menu__nav">
+        <ul class="hamburger-menu__list">
+          <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#course">Курсы</a></li>
+          <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#services">Услуги</a></li>
+          <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#portfolio">Портфолио</a></li>
+          <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#comment">Отзывы</a></li>
+          <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script type="template" id="modalOrderTemplate">
+      <div class="modal">
+        <div class="modal__form">
+          <div class="modal-form__block">
+            <h2 class="modal__title">Заявка на обучение</h2>
+            <form class="form">
+              <div class="form__left">
+                <div class="form__block form__block-error">
+                  <input class="form__input" type="text" name="form-name" placeholder="Имя"><span class="form__error">Введите правильное имя</span>
+                </div>
+                <div class="form__block">
+                  <input class="form__input" type="text" name="form-email" placeholder="E-mail"><span class="form__error">Введите правильный e-mail</span>
+                </div>
+                <div class="form__block">
+                  <input class="form__input" type="text" name="form-tel" placeholder="Телефон"><span class="form__error">Введите правильный телефон</span>
+                </div>
+              </div>
+              <div class="form__right">
+                <div class="form__block">
+                  <textarea class="form__input" name="form-text" id="" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <div class="form__block">
+                  <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Ваше имя" checked>
+                  <label class="form__label" for="userAgreement">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></label>
+                </div>
+                <button class="btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <button class="modal__close"></button>
+          <h2 class="modal__title modal__title-acess">Ваша заявка успешно отправлена</h2>
+        </div>
+      </div>
+    </script>
+    <script type="template" id="modalProgrammTemplate">
+      <div class="modal">
+        <div class="modal__programm">
+          <div class="modal__header">
+            <h2 class="modal__title">Учебнай план изучения программы Autodesk Revit (Architecture) 10 занятий</h2>
+          </div>
+          <div class="modal__body">
+            <ol class="modal-prog__list">
+              <li class="modal-prog__item">Интерфейс (основные функции и инструменты для работы с программой) , создание шаблона проекта. Виды шаблона. Организация рабочего пространства и навигация. Оси и уровни.<span class="modal-prog__num">1</span></li>
+              <li class="modal-prog__item">Стены (создание, редактирование, параметры, создание «пирога» и работа с материалами) и колонны, двери, окна. Типоразмеры и свойства.<span class="modal-prog__num">2</span></li>
+              <li class="modal-prog__item">Перекрытия, крыши (создание, редактирование, создание «пирога» и работа с материалами)<span class="modal-prog__num">3</span></li>
+              <li class="modal-prog__item">Лестницы, пандусы и ограждения (создание, редактирование, параметры и свойства). Формообразующие. Работа с 3D видом. Видимость и графика 3D вида.<span class="modal-prog__num">4</span></li>
+              <li class="modal-prog__item">Семейства (работа с семействами, создание, загрузка и редактирование). Расстановка мебели, оборудования. Создание своего семейства.<span class="modal-prog__num">5</span></li>
+              <li class="modal-prog__item">Зонирование, аннотации, обозначения на планах помещений, легенды, линии детализации и линии модели, выноски. Обмерный план. Привязки размеров и редактирование. Работа с видами (подрезка, свойства, копирование). Использование подложек. Экспорт и импорт из AutoCAD.<span class="modal-prog__num">6</span></li>
+              <li class="modal-prog__item">Создание собственного проекта, отработка предыдущих занятий; совместная работа над проектом.<span class="modal-prog__num">7-8</span></li>
+              <li class="modal-prog__item">Оформление чертежей, разрезы, создание спецификаций, размещение видов на листе. Создание штампа. Организация диспетчера проекта.<span class="modal-prog__num">9</span></li>
+              <li class="modal-prog__item">Визуализация, обход, экспорт проекта. Экспорт в 3DMax. Настройка видимости графики.<span class="modal-prog__num">10</span></li>
+            </ol>
+          </div>
+          <div class="modal__footer">
+            <div class="modal__price"><span class="modal__num">16 000 руб</span></div>
+          </div>
+          <button class="modal__close"></button>
+        </div>
+      </div>
+    </script>
+    <script type="template" id="modalFormTemplate">
+      <div class="modal">
+        <div class="modal__form">
+          <div class="modal-form__block">
+            <h2 class="modal__title">Получить бесплатную консультацию</h2>
+            <form class="form">
+              <div class="form__left">
+                <div class="form__block form__block-error">
+                  <input class="form__input" type="text" name="form-name" placeholder="Имя"><span class="form__error">Введите правильное имя</span>
+                </div>
+                <div class="form__block">
+                  <input class="form__input" type="text" name="form-email" placeholder="E-mail"><span class="form__error">Введите правильный e-mail</span>
+                </div>
+                <div class="form__block">
+                  <input class="form__input" type="text" name="form-tel" placeholder="Телефон"><span class="form__error">Введите правильный телефон</span>
+                </div>
+              </div>
+              <div class="form__right">
+                <div class="form__block">
+                  <textarea class="form__input" name="form-text" id="" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <div class="form__block">
+                  <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Ваше имя" checked>
+                  <label class="form__label" for="userAgreement">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></label>
+                </div>
+                <button class="btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <button class="modal__close"></button>
+          <h2 class="modal__title modal__title-acess">Ваша заявка успешно отправлена</h2>
+        </div>
+      </div>
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

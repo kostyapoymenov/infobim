@@ -732,6 +732,14 @@
   padding-left: rem(5px);
 }
 
+.political__link {
+  color: #ccc;
+  transition: all .3s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .footer {
   background-color: #007a97;
 }
@@ -1140,4 +1148,30 @@
 
 .modal__title-acess {
   display: none;
+}
+
+.btn__top {
+  position: fixed;
+  right:3%;
+  bottom: 15%;
+  background-color: #ccc;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  height:rem(50px);
+  width:rem(50px);
+  background-image: url("../images/content/back.svg");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+  outline:none;
+  padding:rem(10px);
+  opacity:.2;
+  transition: all .3s;
+  &:hover {
+    opacity: .8;
+  }
+  @include phones {
+    display: none;
+  }
 }
