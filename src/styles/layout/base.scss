@@ -6,6 +6,9 @@ body {
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &.body-hidden {
+    overflow: hidden;
+  }
 }
 
 html, body {
@@ -13,7 +16,7 @@ html, body {
   height: 100%;
   font-size: 16px;
   min-height: rem(650px);
-
+  scroll-behavior: smooth;
   @include tablets {
     font-size: 15px;
   }

@@ -396,10 +396,15 @@
   flex-wrap: wrap;
   padding: 2% 7%;
   z-index: 10;
+  height: rem(330px);
+  @include phones {
+    height: auto;
+  }
 }
 
 .work__left {
   width:50%;
+  //height: rem(300px);
   position: relative;
   @include phones {
     width: 90%;
@@ -438,6 +443,9 @@
   @include font-size(14px);
   color: #ffffff;
   margin-bottom: rem(10px);
+  padding-right: rem(15px);
+  max-height: rem(130px);
+  overflow: overlay;
 }
 
 .work__list {
@@ -453,20 +461,16 @@
   border:1px solid #ffffff;
   z-index: 10;
   transition: all .3s;
+  cursor: pointer;
   &:first-child {
     margin-left: 0;
   }
   &:last-child {
     margin-right: 0;
   }
-  &:hover {
-    border:1px solid $darkBlue;
-  }
-}
-
-.work__link {
-  cursor: pointer;
-  height:100%;
+  //&.active {
+  //  border:1px solid $darkBlue;
+  //}
 }
 
 .work__icon {
@@ -666,7 +670,7 @@
   width: 100%;
   margin-bottom: 1.25rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   &.form__block-error {
     .form__input {
