@@ -137,24 +137,29 @@ function scroll(){
 scroll();
 
 function gallary(){
-    const   list        = document.querySelectorAll('.work__list'),
-            item        = document.querySelectorAll('.work__item'),
-            imagesList  = document.querySelectorAll('.work__icon'),
-            mainImage   = document.querySelector('.work__img');
-    for(var i = 0; i < list.length; i++){
-        for(var i = 0; i < imagesList.length; i++){
-            imagesList[i].addEventListener('click', function(e){
-                const   src = this.getAttribute('src'),
-                    imgItem = this.parentNode;
+    const   slideItem   = document.querySelectorAll('.work__slide');
 
-                // imgItem.classList.add('active');
+    for(var i = 0; i < slideItem.length; i++){
+        const   item        = slideItem[i].querySelectorAll('.work__item'),
+                imagesList  = slideItem[i].querySelectorAll('.work__icon'),
+                mainImage   = slideItem[i].querySelector('.work__img');
 
-                mainImage.setAttribute('src', src);
-            });
+        for(var j = 0; j < item.length; j++){
+            item[j].classList.remove('active');
 
+            for(var z = 0; z < imagesList.length; z++){
+
+                imagesList[z].addEventListener('click', function(e){
+                    const   src     = this.getAttribute('src'),
+                            imgItem = this.parentNode;
+
+                    imgItem.classList.add('active');
+
+                    mainImage.setAttribute('src', src);
+                });
+            }
         }
     }
-
 }
 
 gallary();

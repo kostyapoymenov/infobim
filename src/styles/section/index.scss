@@ -462,15 +462,16 @@
   z-index: 10;
   transition: all .3s;
   cursor: pointer;
+
   &:first-child {
     margin-left: 0;
   }
   &:last-child {
     margin-right: 0;
   }
-  //&.active {
-  //  border:1px solid $darkBlue;
-  //}
+  &.active {
+    border:1px solid $darkBlue;
+  }
 }
 
 .work__icon {
@@ -755,16 +756,12 @@
 
 .footer__right {
   width: 50%;
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   .btn__consultation {
     float: right;
-  }
-}
-
-.footer__row {
-  margin-bottom: rem(10px);
-  &:last-child {
-    margin-bottom: 0;
+    margin:0;
   }
 }
 
@@ -786,6 +783,10 @@
     color: $blue;
     transition: all .3s;
   }
+}
+
+.social {
+  margin-bottom: rem(5px);
 }
 
 .social__list {
@@ -813,7 +814,8 @@
 }
 
 .contact__list {
-  margin-bottom: rem(10px);
+  margin-bottom: rem(5px);
+  text-align: right;
 }
 
 .contact__link {
