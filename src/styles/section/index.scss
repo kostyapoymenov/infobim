@@ -180,14 +180,26 @@
 
 .course-block--one {
   background-image: url("../images/bg/fon1.png");
+  @include tablets {
+    background-image: none;
+    background-color: #c5e8f9;
+  }
 }
 
 .course-block--two {
   background-image: url("../images/bg/fon2.png");
+  @include tablets {
+    background-image: none;
+    background-color: #c5e8f9;
+  }
 }
 
 .course-block--three {
   background-image: url("../images/bg/fon3.png");
+  @include tablets {
+    background-image: none;
+    background-color: #c5e8f9;
+  }
 }
 
 .course-content {
@@ -404,7 +416,6 @@
 
 .work__left {
   width:50%;
-  //height: rem(300px);
   position: relative;
   @include phones {
     width: 90%;
@@ -462,6 +473,7 @@
   z-index: 10;
   transition: all .3s;
   cursor: pointer;
+  opacity: .5;
 
   &:first-child {
     margin-left: 0;
@@ -471,6 +483,7 @@
   }
   &.active {
     border:1px solid $darkBlue;
+    opacity: 1;
   }
 }
 
