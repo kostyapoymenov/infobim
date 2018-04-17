@@ -337,7 +337,7 @@
               <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Ваше имя" checked>
               <label class="form__label" for="userAgreement">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></label>
             </div>
-            <button class="btn">Отправить</button>
+            <button class="btn btn__order" type="button">Отправить</button>
           </div>
         </form>
       </div>
@@ -410,7 +410,7 @@
                   <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Ваше имя" checked>
                   <label class="form__label" for="userAgreement">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></label>
                 </div>
-                <button class="btn">Отправить</button>
+                <button class="btn btn-modal" type="button">Отправить</button>
               </div>
             </form>
           </div>
@@ -470,12 +470,22 @@
                   <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Ваше имя" checked>
                   <label class="form__label" for="userAgreement">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></label>
                 </div>
-                <button class="btn">Отправить</button>
+                <button class="btn btn-modal" type="button">Отправить</button>
               </div>
             </form>
           </div>
           <button class="modal__close"></button>
           <h2 class="modal__title modal__title-acess">Ваша заявка успешно отправлена</h2>
+        </div>
+      </div>
+    </script>
+    <script type="template" id="modalAccess">
+      <div class="modal">
+        <div class="modal__form">
+          <div class="modal-form__block">
+            <h2 class="modal__title">Ваша заявка успешно отправлена</h2>
+          </div>
+          <button class="modal__close"></button>
         </div>
       </div>
     </script>

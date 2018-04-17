@@ -52,18 +52,30 @@ function modal(content, btn){
         overlayElement.innerHTML = template.innerHTML;
 
         const closeElement = overlayElement.querySelector('.modal__close');
-
         closeElement.addEventListener('click', function() {
             document.body.removeChild(overlayElement);
             document.body.style.overflow = '';
         });
+
+        const btnAll = overlayElement.querySelectorAll('.btn-modal');
+        for( let i = 0; i < btnAll.length; i++ ){
+           btnAll[i].addEventListener('click', function() {
+               const modalForm = overlayElement.querySelector('.modal__form');
+               modalForm.classList.add('modal__access');
+               setTimeout(function(){
+                   document.body.removeChild(overlayElement);
+                   document.body.style.overflow = '';
+               }, 1000);
+
+           });
+        }
 
         return overlayElement;
     }
 
     const overlay = openOverlay(content);
 
-    for(var i = 0; i < orderBtn.length; i++ ){
+    for( var i = 0; i < orderBtn.length; i++ ){
         orderBtn[i].addEventListener('click',function() {
             document.body.appendChild(overlay);
             document.body.style.overflow = 'hidden';
@@ -73,6 +85,18 @@ function modal(content, btn){
 modal('#modalProgrammTemplate', '.course-item__btn');
 modal('#modalFormTemplate', '.btn__consultation');
 modal('#modalOrderTemplate', '.btn__order');
+modal('#modalAccess', '.btn__access');
+
+// function accessModal() {
+//     var btnAll = document.querySelectorAll('.btn-modal');
+//     for( let i = 0; i < btnAll.length; i++  ){
+//         btnAll[i].addEventListener('click', function() {
+//             console.log('aaa');
+//         });
+//     }
+// }
+// accessModal();
+
 
 function scroll(){
     var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
