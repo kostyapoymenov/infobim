@@ -85,18 +85,6 @@ function modal(content, btn){
 modal('#modalProgrammTemplate', '.course-item__btn');
 modal('#modalFormTemplate', '.btn__consultation');
 modal('#modalOrderTemplate', '.btn__order');
-modal('#modalAccess', '.btn__access');
-
-// function accessModal() {
-//     var btnAll = document.querySelectorAll('.btn-modal');
-//     for( let i = 0; i < btnAll.length; i++  ){
-//         btnAll[i].addEventListener('click', function() {
-//             console.log('aaa');
-//         });
-//     }
-// }
-// accessModal();
-
 
 function scroll(){
     var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
@@ -123,7 +111,6 @@ function scroll(){
         }, false);
     }
 }
-
 scroll();
 
 function gallary(){
@@ -151,5 +138,4 @@ function gallary(){
         }
     }
 }
-
 gallary();
