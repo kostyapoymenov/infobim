@@ -27,7 +27,7 @@
         <div class="hero-block">
           <div class="hero-block__name">infoBIM</div>
           <h1 class="hero-block__offer">Школа информационного моделирования и компьютерной графики</h1>
-          <button class="btn btn__order">Связаться</button>
+          <button class="btn btn__consultation">Связаться</button>
         </div>
       </div>
     </section>
@@ -227,7 +227,7 @@
                 </ul>
                 <div class="service-block__price">Цена:<span class="service-block__value"> договорная</span></div>
               </div>
-              <button class="btn btn__order">Заказать</button>
+              <button class="btn btn__service">Заказать</button>
             </div>
           </div>
           <div class="service-block service-block--right">
@@ -240,7 +240,7 @@
                 </ul>
                 <div class="service-block__price">Цена:<span class="service-block__value"> 300 р/кв.м</span></div>
               </div>
-              <button class="btn btn__order">Заказать</button>
+              <button class="btn btn__service">Заказать</button>
             </div>
           </div>
         </div>
@@ -337,7 +337,7 @@
               <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Ваше имя" checked>
               <label class="form__label" for="userAgreement">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></label>
             </div>
-            <button class="btn btn__order" type="button">Отправить</button>
+            <button class="btn btn__access" type="button">Отправить</button>
           </div>
         </form>
       </div>
@@ -476,6 +476,50 @@
           </div>
           <button class="modal__close"></button>
           <h2 class="modal__title modal__title-acess">Ваша заявка успешно отправлена</h2>
+        </div>
+      </div>
+    </script>
+    <script type="template" id="modalServiceTemplate">
+      <div class="modal">
+        <div class="modal__form">
+          <div class="modal-form__block">
+            <h2 class="modal__title">Заявка на услугу</h2>
+            <form class="form">
+              <div class="form__left">
+                <div class="form__block form__block-error">
+                  <input class="form__input" type="text" name="form-name" placeholder="Имя"><span class="form__error">Введите правильное имя</span>
+                </div>
+                <div class="form__block">
+                  <input class="form__input" type="text" name="form-email" placeholder="E-mail"><span class="form__error">Введите правильный e-mail</span>
+                </div>
+                <div class="form__block">
+                  <input class="form__input" type="text" name="form-tel" placeholder="Телефон"><span class="form__error">Введите правильный телефон</span>
+                </div>
+              </div>
+              <div class="form__right">
+                <div class="form__block">
+                  <textarea class="form__input" name="form-text" id="" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <div class="form__block">
+                  <input class="form__chekbox" id="userAgreement" type="checkbox" name="form-name" value="Ваше имя" checked>
+                  <label class="form__label" for="userAgreement">Я даю согласие на обработку моих персональных данных<a class="political__link" href="political.html" target="_blank">Политика конфидециальности</a></label>
+                </div>
+                <button class="btn btn-modal" type="button">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <button class="modal__close"></button>
+          <h2 class="modal__title modal__title-acess">Ваша заявка успешно отправлена</h2>
+        </div>
+      </div>
+    </script>
+    <script type="template" id="modalAccessTemplate">
+      <div class="modal">
+        <div class="modal__form">
+          <div class="modal-form__block">
+            <h2 class="modal__title">Ваша заявка успешно отправлена</h2>
+          </div>
+          <button class="modal__close"></button>
         </div>
       </div>
     </script>

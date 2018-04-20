@@ -91,6 +91,7 @@
   padding:rem(35px) 0;
   width: 48%;
   .btn {
+    margin: 0;
     @include phones {
       margin:0 auto;
     }
@@ -967,7 +968,6 @@
     top:rem(35px);
   }
 }
-
 
 .modal {
   position: absolute;
