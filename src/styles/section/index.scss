@@ -809,7 +809,7 @@
 
 .form__error {
   position: absolute;
-  //bottom: calc(100% + 5px);
+  bottom: calc(100% + 5px);
   bottom: 100%;
   font-family: 'CenturyGothic';
   font-weight: 300;
@@ -1218,7 +1218,7 @@
 
 .modal__overlay {
   position: fixed;
-  z-index: 10;
+  z-index: 30;
   height:100%;
   width:100%;
   background-color: rgba(25,68,84,0.87);
