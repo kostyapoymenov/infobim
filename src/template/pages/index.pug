@@ -527,14 +527,42 @@ block content
                     .feedback__left
                         .feedback__name Караваев Игорь Сергеевич
                         .feedback__post Инженер-проектировщик
+                        .feedback__work
+                            a.feedback__work_link(href="#" target="_blank") ООО "Санлайн"
+                        .feedback__social
+                            .social
+                                -
+                                    var socials = [
+                                        ['vk','https://vk.com/infobim']
+                                        ]
+                                ul.social__list
+                                    each social in socials
+                                        li.social__item
+                                            a(class=`social__link social__link_${social[0]}` href=`${social[1]}` target="_blank")
+                                                svg.social__link_svg(width='100%' height='100%')
+                                                    use(xlink:href=`images/icons/sprite.svg#${social[0]}`)
                     .feedback__right
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 .feedback__item
                     .feedback__left
-                        .feedback__name Иванов Алексанр Венедиктович
+                        .feedback__name Караваев Игорь Сергеевич 2
                         .feedback__post Инженер-проектировщик
+                        .feedback__work
+                            a.feedback__work_link(href="#" target="_blank") ООО "Санлайн"
+                        .feedback__social
+                            .social
+                                -
+                                    var socials = [
+                                    ['vk','https://vk.com/infobim']
+                                    ]
+                                ul.social__list
+                                    each social in socials
+                                        li.social__item
+                                            a(class=`social__link social__link_${social[0]}` href=`${social[1]}` target="_blank")
+                                                svg.social__link_svg(width='100%' height='100%')
+                                                    use(xlink:href=`images/icons/sprite.svg#${social[0]}`)
                     .feedback__right
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     section.contact#contact
         .container
             h2.main-title Связаться

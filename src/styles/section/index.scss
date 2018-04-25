@@ -584,8 +584,6 @@
   }
 }
 
-
-
 .about-block {
   display: flex;
   @include phones {
@@ -644,10 +642,6 @@
   }
 }
 
-
-
-
-
 .feedback {
   position: relative;
 }
@@ -678,6 +672,22 @@
   }
 }
 
+.feedback__social {
+  .social__link_svg {
+    fill: #d2dae2;
+    max-width: rem(35px);
+    max-height: rem(35px);
+  }
+  &.social__link_svg:hover {
+    fill: #35b5cb;
+  }
+  @include phones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .feedback__name {
   font-family: 'CenturyGothic';
   font-weight: 600;
@@ -697,6 +707,14 @@
   @include phones {
     text-align: center;
   }
+}
+
+.feedback__work_link {
+  font-family: 'CenturyGothic';
+  font-weight: 500;
+  @include font-size(16px);
+  color: #9a9a9a;
+  text-decoration: underline;
 }
 
 .feedback__right {
