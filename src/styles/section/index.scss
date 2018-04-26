@@ -715,6 +715,10 @@
   @include font-size(16px);
   color: #9a9a9a;
   text-decoration: underline;
+  transition: all .3s;
+  &:hover {
+    color: #194454;
+  }
 }
 
 .feedback__right {
